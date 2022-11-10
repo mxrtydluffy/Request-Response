@@ -25,7 +25,7 @@ def madlib(adjective, noun):
 @app.route('/multiply/<number_1>/<number_2>')
 def multiply_2numbers(number_1, number_2):
     """Displays a message to the user that multiplies two numbers and shows the result."""
-    number_answer = int(number_1) * (number_2)
+    number_answer = int(number_1) * int(number_2)
     return f"{number_1} multipled by {number_2} equals {number_answer}."
 
 @app.route('/sayntimes/<word>/<n>')
